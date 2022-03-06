@@ -53,10 +53,8 @@ for (
   );
 
 
-<!--[ Lazy adsense Script with auto ads ]-->
+<!--[ AnitAd ]-->
 var lazyAnti=!1;var antiAdBlock=document.querySelector("#antiAdBlock");window.addEventListener("scroll",function(){(0!=document.documentElement.scrollTop&&!1===lazyAnti||0!=document.body.scrollTop&&!1===lazyAnti)&&(!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";e.onerror=function(){if(antiAdBlock!=null){antiAdBlock.classList.remove("hidden");window.lazyAnti=!0}};var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}(),lazyAnti=!0)},!0);
 
- <!-- Global site tag (gtag.js) - Google Analytics -->
-function downloadJSAtOnload(){var d=document.createElement('script');d.src='https://www.googletagmanager.com/gtag/js?id=UA-194330782-1',document.body.appendChild(d)}window.addEventListener?window.addEventListener('load',downloadJSAtOnload,!1):window.attachEvent?window.attachEvent('onload',downloadJSAtOnload):window.onload=downloadJSAtOnload; window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-194330782-1');
 
 
