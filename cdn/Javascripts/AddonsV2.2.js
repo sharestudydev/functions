@@ -2,7 +2,7 @@
 var ckBox = document.getElementById("ckBox"),
   ckAcptBtn = document.getElementById("ckAcptBtn"),
   ckErrMes =
-    "Cookie can't be set! Please unblock this site from the cookie setting of your browser.";
+    "<input class='MiniPop hidden' id='forCkErr' type='checkbox'/><div class='MiniPopNotif hidden' data-text='Cookie can&#039;t be set! Please unblock this site from the cookie setting of your browser.'><label for='forCkErr'></label></div>";
 if (null != ckBox) {
   ckAcptBtn.onclick = () => {
     (document.cookie = "CookieConsent=Accepted; max-age=2592000; path=/"),
