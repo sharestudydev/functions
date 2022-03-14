@@ -1,16 +1,30 @@
 <!--[ CookieConsent JS ]-->
-var ckBox = document.getElementById("ckBox"),
-  ckAcptBtn = document.getElementById("ckAcptBtn"),
-  ckErrMes =
-    "<input class='MiniPop hidden' id='forCkErr' type='checkbox'/><div class='MiniPopNotif hidden' data-text='Cookie can&#039;t be set! Please unblock this site from the cookie setting of your browser.'><label for='forCkErr'></label></div>";
-if (null != ckBox) {
-  ckAcptBtn.onclick = () => {
-    (document.cookie = "CookieConsent=Accepted; max-age=2592000; path=/"),
-      document.cookie ? ckBox.classList.add("acptd") : alert(ckErrMes);
-  };
-  let e = document.cookie.indexOf("CookieConsent=Accepted");
-  -1 != e ? ckBox.classList.add("hide") : ckBox.classList.remove("hide");
-}
+window.addEventListener("load", function () {
+  var HTML101 = document.querySelector("#HTML101"),
+    ckAccept = document.querySelector("#ckAccept"),
+    ckError = document.querySelector("#ckError"),
+    ckErrorN =
+      "<input class='nJs hidden' id='forCkErr' type='checkbox'/><div class='noJs' data-text='Oops! Cookie can&#039;t be set! Please unblock this site from the cookie setting of your browser.'><label for='forCkErr'></label></div>";
+  if (HTML101 != null) {
+    HTML101.classList.add("v");
+    ckAccept.onclick = () => {
+      document.cookie =
+        "CookiePolicy=Accepted;max-age=" + 60 * 60 * 24 * 30 + ";path=/";
+      if (document.cookie) {
+        console.log("The user has accepted the Cookie Policy");
+        HTML101.classList.add("a");
+      } else {
+        ckError.innerHTML = ckErrorN;
+      }
+    };
+    let ckConsent = document.cookie.indexOf("CookiePolicy=Accepted");
+    if (ckConsent != -1) {
+      console.log("Cookie Policy is Accepted");
+      HTML101.classList.remove("v");
+    }
+  }
+});
+
 
 <!--[ No Internet Connection ]-->
 function noconnRel() {
