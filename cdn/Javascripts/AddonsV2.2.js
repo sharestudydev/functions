@@ -1,18 +1,18 @@
 <!--[ CookieConsent JS ]-->
 window.addEventListener("load", function () {
-  var HTML101 = document.querySelector("#HTML101"),
+  var ckWrap = document.querySelector("#ckWrap"),
     ckAccept = document.querySelector("#ckAccept"),
     ckError = document.querySelector("#ckError"),
     ckErrorN =
       "<input class='nJs hidden' id='forCkErr' type='checkbox'/><div class='noJs' data-text='Oops! Cookie can&#039;t be set! Please unblock this site from the cookie setting of your browser.'><label for='forCkErr'></label></div>";
-  if (HTML101 != null) {
-    HTML101.classList.add("v");
+  if (ckWrap != null) {
+    ckWrap.classList.add("v");
     ckAccept.onclick = () => {
       document.cookie =
         "CookiePolicy=Accepted;max-age=" + 60 * 60 * 24 * 30 + ";path=/";
       if (document.cookie) {
         console.log("The user has accepted the Cookie Policy");
-        HTML101.classList.add("a");
+        ckWrap.classList.add("a");
       } else {
         ckError.innerHTML = ckErrorN;
       }
@@ -20,10 +20,11 @@ window.addEventListener("load", function () {
     let ckConsent = document.cookie.indexOf("CookiePolicy=Accepted");
     if (ckConsent != -1) {
       console.log("Cookie Policy is Accepted");
-      HTML101.classList.remove("v");
+      ckWrap.classList.remove("v");
     }
   }
 });
+
 
 
 <!--[ No Internet Connection ]-->
