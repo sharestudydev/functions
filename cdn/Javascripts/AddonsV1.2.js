@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
     ckAccept = document.querySelector("#ckAccept"),
     ckError = document.querySelector("#ckError"),
     ckErrorN =
-      "<input class='nJs hidden' id='forCkErr' type='checkbox'/><div class='noJs' data-text='Oops! Cookie can&#039;t be set! Please unblock this site from the cookie setting of your browser.'><label for='forCkErr'></label></div>";
+      "<input class='MiniPop hidden' id='forCkErr' type='checkbox'/><div class='MiniPopNotif hidden' data-text='Oops! Cookie can&#039;t be set! Please unblock this site from the cookie setting of your browser.'><label for='forCkErr'></label></div>";
   if (ckWrap != null) {
     ckWrap.classList.add("v");
     ckAccept.onclick = () => {
