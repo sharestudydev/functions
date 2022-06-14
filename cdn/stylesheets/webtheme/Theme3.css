@@ -1,0 +1,14 @@
+/* Theme 3 - Blue */
+:root .theme3:not(.drK) {
+  /* Theme */
+  --themeC: #1565c0; /* Body */
+  --bodyB: #fbfeff; /* Link */
+  --linkC: #1976d2;
+  --linkB: #1976d2; /* Header */
+  --headerB: #e3f2fd; /* Notif */
+  --notifU: #e3f2fd;
+  --notifC: #1565c0; /* Search */
+  --srchB: #e3f2fd; /* MobMn */
+  --mobB: #e3f2fd; /* Wave */
+  --waveB: #e3f2fd;
+}
