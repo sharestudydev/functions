@@ -1,0 +1,14 @@
+/* Theme 1 - Red */
+:root .theme1:not(.drK) {
+  /* Theme */
+  --themeC: #d32f2f; /* Body */
+  --bodyB: #fffcfd; /* Link */
+  --linkC: #f44336;
+  --linkB: #f44336; /* Header */
+  --headerB: #ffebee; /* Notif */
+  --notifU: #ffebee;
+  --notifC: #b71c1c; /* Search */
+  --srchB: #ffebee; /* MobMn */
+  --mobB: #ffebee; /* Wave */
+  --waveB: #ffebee;
+}
