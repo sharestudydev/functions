@@ -1,0 +1,14 @@
+/* Theme 2 - Green */
+:root .theme2:not(.drK) {
+  /* Theme */
+  --themeC: #00796b; /* Body */
+  --bodyB: #fcfffc; /* Link */
+  --linkC: #009688;
+  --linkB: #009688; /* Header */
+  --headerB: #e0f2f1; /* Notif */
+  --notifU: #e0f2f1;
+  --notifC: #00796b; /* Search */
+  --srchB: #e0f2f1; /* MobMn */
+  --mobB: #e0f2f1; /* Wave */
+  --waveB: #e0f2f1;
+}
