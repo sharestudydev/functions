@@ -1,0 +1,14 @@
+/* Theme 4 - Yellow */
+:root .theme4:not(.drK) {
+  /* Theme */
+  --themeC: #ffc107; /* Body */
+  --bodyB: #fffefa; /* Link */
+  --linkC: #ff8f00;
+  --linkB: #ff8f00; /* Header */
+  --headerB: #fff8e1; /* Notif */
+  --notifU: #fff8e1;
+  --notifC: #ff8f00; /* Search */
+  --srchB: #fff8e1; /* MobMn */
+  --mobB: #fff8e1; /* Wave */
+  --waveB: #fff8e1;
+}
