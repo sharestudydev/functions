@@ -1,5 +1,5 @@
 @font-face {
   font-family: "Virgo";
-  src: url('');
-  src: url('') format('truetype');
+  src: url('https://cdn.jsdelivr.net/gh/sharestudy01/functions@internal/cdn/fonts/virgo.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/sharestudy01/functions@internal/cdn/fonts/virgo.ttf') format('truetype');
 }
